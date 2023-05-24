@@ -10,6 +10,9 @@ import { FooterComponent } from './core/footer/footer.component';
 import { RightMenuComponent } from './core/right-menu/right-menu.component';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { PageHeaderComponent } from './core/page-header/page-header.component';
+import { FormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,15 @@ import { PageHeaderComponent } from './core/page-header/page-header.component';
     FooterComponent,
     RightMenuComponent,
     NavigationComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

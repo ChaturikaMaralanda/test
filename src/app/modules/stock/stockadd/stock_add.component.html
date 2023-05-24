@@ -1,0 +1,18 @@
+<div>
+  <p>STOCK</p>
+  <form stockForm="ngForm">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="stock.name">
+    </div>
+    <div>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" [(ngModel)]="stock.quantity">
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" [(ngModel)]="stocks.quantity">
+    </div>
+    <button type="submit" (click)="create()">Add Stock Item</button>
+  </form>
+</div>
